@@ -1,0 +1,159 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Franklin",
+      "role": "body"
+    },
+    {
+      "family": "Arial",
+      "role": "body"
+    },
+    {
+      "family": "Helvetica",
+      "role": "body"
+    },
+    {
+      "family": "Postoni",
+      "role": "heading"
+    },
+    {
+      "family": "Garamond",
+      "role": "heading"
+    }
+  ],
+  "colors": {
+    "primary": "#166DFC",
+    "accent": "#EA0017",
+    "background": "#FFFFFF",
+    "textPrimary": "#111111",
+    "link": "#EA0017"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Franklin",
+      "heading": "Postoni"
+    },
+    "fontStacks": {
+      "heading": [
+        "Franklin",
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "body": [
+        "Franklin",
+        "Arial",
+        "Helvetica",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Franklin",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "16px",
+      "h2": "26px",
+      "body": "14px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {
+    "input": {
+      "background": "transparent",
+      "textColor": "#111111",
+      "borderColor": null,
+      "borderRadius": "0px",
+      "borderRadiusCorners": {
+        "topLeft": "0px",
+        "topRight": "0px",
+        "bottomRight": "0px",
+        "bottomLeft": "0px"
+      },
+      "shadow": "none"
+    },
+    "buttonPrimary": {
+      "background": "#166DFC",
+      "textColor": "#FFFFFF",
+      "borderRadius": "9999px",
+      "borderRadiusCorners": {
+        "topLeft": "9999px",
+        "topRight": "9999px",
+        "bottomRight": "9999px",
+        "bottomLeft": "9999px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#FFFFFF",
+      "textColor": "#111111",
+      "borderRadius": "9999px",
+      "borderRadiusCorners": {
+        "topLeft": "9999px",
+        "topRight": "9999px",
+        "bottomRight": "9999px",
+        "bottomLeft": "9999px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "favicon": "https://www.washingtonpost.com/favicon.svg",
+    "ogImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Fimg%252Ewashingtonpost%252Ecom%2Fpb%2Fresources%2Fimg%2Ftwp-social-share%252Epng&w=1484"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": -1,
+    "reasoning": "No valid brand logo was found. The candidate provided is a tiny icon and does not match the typical logo placement or size for 'The Washington Post'.",
+    "confidence": 0.2,
+    "rejected": true,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Save and subscribe",
+      "reasoning": "Button #0 is selected as the primary CTA because it uses the vibrant brand color #166DFC, which is a strong indicator of a primary action. The text 'Save and subscribe' is action-oriented, aligning with typical primary CTA language."
+    },
+    "secondary": {
+      "index": 2,
+      "text": "WP Intelligence",
+      "reasoning": "Button #2 is selected as the secondary CTA because it has a different background color (#FFFFFF) and serves a less prominent role with the text 'WP Intelligence', which is more informational."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "general public interested in news"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": -1,
+        "selectedLogoReasoning": "No valid brand logo was found. The candidate provided is a tiny icon and does not match the typical logo placement or size for 'The Washington Post'.",
+        "confidence": 0.2
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}

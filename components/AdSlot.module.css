@@ -1,0 +1,66 @@
+/* ═══════════════════════════════════════════════════
+   AdSlot — Advertisement Placeholders
+   ═══════════════════════════════════════════════════ */
+
+.adSlot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    border: 1px dashed var(--color-border);
+    background: var(--color-surface);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.label {
+    font-family: var(--font-ui);
+    font-size: var(--fs-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.size {
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+}
+
+/* Sizes */
+.top-banner {
+    width: 970px;
+    max-width: 100%;
+    height: 90px;
+}
+
+.banner {
+    width: 728px;
+    max-width: 100%;
+    height: 90px;
+}
+
+.sidebar {
+    width: 300px;
+    max-width: 100%;
+    height: 250px;
+}
+
+.inline {
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+
+    .banner,
+    .top-banner {
+        width: 100%;
+        height: 60px;
+    }
+
+    .inline {
+        height: 80px;
+    }
+}

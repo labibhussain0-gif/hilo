@@ -1,0 +1,140 @@
+/* ═══════════════════════════════════════════════════
+   Footer — WaPo-Inspired
+   ═══════════════════════════════════════════════════ */
+
+.footer {
+    background: #111111;
+    color: #ccc;
+    margin-top: var(--space-4xl);
+}
+
+.footerInner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: var(--space-3xl);
+    padding: var(--space-3xl) var(--space-xl);
+}
+
+/* Brand */
+.brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.brandLogo {
+    font-family: var(--font-masthead);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.brandLogo:hover {
+    color: #fff;
+}
+
+.brandDesc {
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.linksHeading {
+    font-family: var(--font-ui);
+    font-size: var(--fs-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+.linksNav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.link {
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: #999;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.link:hover {
+    color: #fff;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.newsletterDesc {
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: #999;
+    margin-bottom: 0;
+}
+
+.form {
+    display: flex;
+}
+
+.input {
+    flex: 1;
+    padding: 10px 16px;
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: none;
+    border-radius: 9999px 0 0 9999px;
+    outline: none;
+}
+
+.input::placeholder {
+    color: #666;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+}
+
+.success {
+    font-family: var(--font-ui);
+    font-size: var(--fs-sm);
+    color: #10b981;
+    margin-bottom: 0;
+}
+
+/* Bottom bar */
+.bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--space-lg) 0;
+    font-family: var(--font-ui);
+    font-size: var(--fs-xs);
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+}
