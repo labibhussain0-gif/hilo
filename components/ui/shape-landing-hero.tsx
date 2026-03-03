@@ -65,15 +65,17 @@ function ElegantShape({
 
 function AmbientShapes() {
     const [isMobile, setIsMobile] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setMounted(true);
         const check = () => setIsMobile(window.innerWidth <= 768);
         check();
         window.addEventListener("resize", check);
         return () => window.removeEventListener("resize", check);
     }, []);
 
-    if (isMobile) return null;
+    if (!mounted || isMobile) return null;
 
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
